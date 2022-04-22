@@ -18,6 +18,5 @@ jobs:
         run: |
           curl ${{ secrets.APP_URL }}/api/cron/bookingReminder \
             -X POST \
-            -H 'content-type: application/json' \
             -H 'authorization: ${{ secrets.CRON_API_KEY }}' \
             --fail
